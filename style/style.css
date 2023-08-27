@@ -8,6 +8,28 @@
 }
 /* CSS Var */
 
+.pop-h {
+  font-size: 120px;
+  font-weight: 800;
+  color: #ebeced;
+  text-align: center;
+}
+.pop-p {
+  font-size: 40px;
+  text-align: center;
+  color: #797979;
+  margin-top: -26px;
+}
+@media (max-width: 767px) {
+  .pop-h {
+    font-size: 60px;
+  }
+  .pop-p {
+    margin-top: -15px;
+    font-size: 30px;
+  }
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -237,3 +259,106 @@ section.features .feat p {
   }
 }
 /* end services */
+
+/* start portfolio */
+.portfolio {
+  padding-bottom: var(--main-padding);
+  background-color: var(--bg-main);
+}
+.portfolio--content {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-rows: 450px;
+  gap: 2rem;
+  padding-top: 2rem;
+}
+.portfolio--content__col {
+  background-color: var(--bg-white);
+}
+.portfolio--content__col img {
+  max-width: 100%;
+}
+.portfolio--content__col .text {
+  padding: 1rem;
+}
+.portfolio--content__col .text h4 {
+  margin-bottom: 0.8rem;
+  font-size: 1.5rem;
+}
+.portfolio--content__col .text p {
+  font-weight: 500;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+.portfolio--content__col .button {
+  text-align: center;
+}
+.portfolio--content__col .button a {
+  background: #00bcd4;
+  color: var(--bg-secondary);
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.3rem;
+  font-size: 1.3rem;
+  text-decoration: none;
+}
+/* end portfolio */
+
+/* start about */
+.about {
+  padding-bottom: var(--main-padding);
+  background-color: var(--bg-white);
+}
+.about--contant {
+  padding-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* grid-template-rows: 450px; */
+}
+@media (max-width: 991px) {
+  .about--contant {
+    display: block;
+    text-align: center;
+  }
+  .about--contant .image {
+    margin: auto;
+    margin-bottom: 2rem;
+  }
+}
+.about--contant .image {
+  position: relative;
+  max-width: 400px;
+}
+.about--contant .image img {
+  max-width: 100%;
+}
+.about--contant .col p:first-of-type {
+  font-weight: bold;
+  line-height: 1.9;
+  margin-bottom: 50px;
+  color: var(--second-color);
+}
+.about--contant .col hr {
+  background-color: var(--text-main);
+  height: 3px;
+  width: 50%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.about--contant .col p:last-of-type {
+  font-weight: 500;
+  line-height: 1.9;
+  margin-bottom: 50px;
+  color: var(--second-p-color);
+}
+@media (max-width: 991px) {
+  .about--contant .col {
+    text-align: center;
+  }
+  .about--contant .col hr {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+/* end about */
