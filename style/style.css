@@ -362,3 +362,52 @@ section.features .feat p {
   }
 }
 /* end about */
+
+/* start Contact*/
+.contact {
+  background-color: var(--bg-main);
+  padding-top: var(--main-padding);
+  padding-bottom: var(--main-padding);
+}
+.contact--content {
+  text-align: center;
+  padding-top: 1rem;
+}
+.contact--content p {
+  color: var(--bg-secondary);
+  font-size: 3rem;
+  font-weight: bold;
+  padding: 0.3rem;
+}
+.contact--content a {
+  text-decoration: none;
+  color: var(--text-main);
+  font-size: 2rem;
+  font-weight: bold;
+  padding-bottom: 1rem;
+  display: block;
+}
+@media (max-width: 991px) {
+  .contact--content p,
+  .contact--content a {
+    font-size: 1rem;
+  }
+}
+.contact--content .media i {
+  color: var(--text-main);
+}
+/* end Contact*/
+
+/* start Footer */
+footer {
+  background-color: var(--bg-secondary);
+  color: var(--bg-white);
+  padding: 1rem;
+  text-align: center;
+  font-weight: bold;
+}
+footer span {
+  color: var(--text-main);
+  font-size: 2rem;
+}
+/* end Footer */
