@@ -10,4 +10,4 @@ Leon is a free PSD template to practise HTML CSS
 
 <p>The link to the project site is: <a href="https://www.graphberry.com/item/leon-psd-agency-template" target="_blank">Leon-Agency</a></p>
 
-<h1>Live: <a href="https://adelomer215.github.io/Leon-Agency-HTML_CSS/" target="_blank">here</a></h1>
+<h1>https://adelomer215.github.io/Leon-Agency-HTML_CSS/</h1>
